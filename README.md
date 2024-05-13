@@ -3,12 +3,12 @@
 
 ## DIRECTORY STRUCTURE:
 
-- Agents: Contains RL agents like TDMPC, DreamerV3 etc.
-- Assets: Contains robot model, scene model object etc ([Download from here](https://disk.yandex.com/d/uoe_AzbQPTrsPw))
-- Models: Contains trained models and training logs
-- Tasks: Contains code for creating training envrionment.
-- Utils: Contains utility scripts (like config parser).
-- Wrappers: Contains Gym-Env wrapper (It will contain wrapper for VecEnv which would determine no. of timesteps and other details about RL environment).
+- **Agents**: Contains RL agents like TDMPC, DreamerV3 etc.
+- **Assets**: Contains robot model, scene model object etc ([Download from here](https://disk.yandex.com/d/uoe_AzbQPTrsPw)).
+- **Models**: Contains trained models and training logs
+- **Tasks**: Contains code for creating training envrionment.
+- **Utils**: Contains utility scripts (like config parser).
+- **Wrappers**: Contains Gym-Env wrapper (It will contain wrapper for VecEnv which would determine no. of timesteps and other details about RL environment).
 
 ## To-Use:
 
@@ -19,9 +19,9 @@
 
 ## To-Do:
 
-Add scene assets
-Add Manipulator Controller
-Create Manipulation Tasks
-Create Manipulation + Navigation Tasks
-Add Dockerfile
-Add Omniverse-Streaming 
+- [ ] Add scene assets
+- [ ] Add Manipulator Controller
+- [ ] Create Manipulation Tasks
+- [ ] Create Manipulation + Navigation Tasks
+- [ ] Add Dockerfile
+- [ ] Add Omniverse-Streaming 
