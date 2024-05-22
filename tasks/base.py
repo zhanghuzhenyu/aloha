@@ -10,7 +10,7 @@ from omni.isaac.core.utils.types import ArticulationAction
 from omni.isaac.core.articulations import ArticulationView
 from omni.isaac.wheeled_robots.controllers.differential_controller import DifferentialController
 
-from utils.json_parser import asset_path
+from utils.json_parser import get_asset_path
 
 
 class AlohaTask(BaseTask):
@@ -79,7 +79,7 @@ class AlohaTask(BaseTask):
             create_prim(
                 prim_path=f"{scene_prim_path}/aloha",
                 translation= np.array([0,0,0]),
-                usd_path=asset_path()
+                usd_path=get_asset_path("ALOHA_ASSET_PATH")
             )
 
 

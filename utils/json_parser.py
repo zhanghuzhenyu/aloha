@@ -3,9 +3,12 @@ import json
 from pathlib import Path
 
 
-def asset_path():
-    config_file_path = os.path.abspath('config.json')
-    with open(config_file_path, 'r') as config_file:
+ROOT_PATH = Path(__file__).parents[1]
+CONFIG_PATH = (ROOT_PATH / "config.json").resolve()
+
+
+def get_asset_path(key):
+    with open(CONFIG_PATH, 'r') as config_file:
         config = json.load(config_file)
 
-    return Path(config['ALOHA_ASSET_PATH']).as_posix()
+    return Path(config[key]).as_posix()
